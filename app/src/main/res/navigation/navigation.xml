@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/burritoPlacesFragment">
+
+    <fragment
+        android:id="@+id/burritoPlacesFragment"
+        android:name="com.llamalabb.burritoplaces.ui.burritoplaces.BurritoPlacesFragment"
+        android:label="fragment_burrito_places"
+        tools:layout="@layout/fragment_burrito_places" >
+        <action
+            android:id="@+id/action_burritoPlacesFragment_to_pinnedMapFragment"
+            app:destination="@id/pinnedMapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pinnedMapFragment"
+        android:name="com.llamalabb.burritoplaces.ui.map.PinnedMapFragment"
+        android:label="fragment_pinned_map"
+        tools:layout="@layout/fragment_pinned_map" />
+</navigation>
